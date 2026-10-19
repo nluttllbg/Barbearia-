@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Metadados -->
+  <title>Barbearia - Brutus Barbershop | Tradição, Estilo e Conforto</title>
+  <meta name="description" content="Website oficial da Barbearia - Brutus Barbershop. Conheça nosso espaço exclusivo, equipe profissional e agende seu horário pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Barbearia - Brutus Barbershop | Tradição, Estilo e Conforto" />
+  <meta property="og:description" content="Website oficial da Barbearia - Brutus Barbershop. Conheça nosso espaço exclusivo, equipe profissional e agende seu horário pelo WhatsApp." />
+  <meta property="og:site_name" content="Barbearia - Brutus Barbershop" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Barbearia - Brutus Barbershop | Tradição, Estilo e Conforto" />
+  <meta name="twitter:description" content="Website oficial da Barbearia - Brutus Barbershop. Conheça nosso espaço exclusivo, equipe profissional e agende seu horário pelo WhatsApp." />
+  <meta name="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20" />
+
+  <!-- Schema.org Dados Estruturados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Barbershop",
+    "name": "Barbearia - Brutus Barbershop",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20",
+    "telephone": "+55 66 9987-6380",
+    "url": "https://maps.app.goo.gl/J3BLhVqvatXLP7iV7",
+    "priceRange": "$$",
+    "currenciesAccepted": "BRL",
+    "description": "Barbearia Brutus Barbershop. Experiência refinada de corte, barba e cuidados masculinos."
+  }
+  </script>
+
+  <!-- Tipografia e Ícones do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Estilos Base & Configuração Tailwind -->
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    /* Estilização suave da barra de rolagem */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #111317;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #333539;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e9c176;
+    }
+
+    /* Modal Lightbox Transition */
+    .lightbox-modal {
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+    .lightbox-modal.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .lightbox-modal:not(.hidden) {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-fixed": "#ffdea3",
+            "tertiary": "#e8c178",
+            "surface-container": "#1e2024",
+            "outline": "#9a8f80",
+            "secondary": "#e7c17a",
+            "surface-bright": "#37393e",
+            "outline-variant": "#4e4639",
+            "surface-container-high": "#282a2e",
+            "primary-fixed-dim": "#e9c176",
+            "inverse-surface": "#e2e2e8",
+            "surface-variant": "#333539",
+            "on-background": "#e2e2e8",
+            "on-secondary-container": "#d4b06a",
+            "surface-container-low": "#1a1c20",
+            "background": "#111317",
+            "error-container": "#93000a",
+            "secondary-container": "#5c4304",
+            "surface-tint": "#e9c176",
+            "on-primary": "#412d00",
+            "on-secondary": "#402d00",
+            "inverse-primary": "#775a19",
+            "surface-container-highest": "#333539",
+            "on-error": "#690005",
+            "inverse-on-surface": "#2f3035",
+            "on-surface": "#e2e2e8",
+            "tertiary-container": "#c4a05a",
+            "tertiary-fixed-dim": "#e8c178",
+            "secondary-fixed-dim": "#e7c17a",
+            "surface-dim": "#111317",
+            "primary-container": "#c5a059",
+            "on-tertiary-fixed-variant": "#5d4202",
+            "primary": "#e9c176",
+            "surface-container-lowest": "#0c0e12",
+            "on-tertiary-fixed": "#261900",
+            "tertiary-fixed": "#ffdea4",
+            "on-primary-fixed": "#261900",
+            "on-secondary-fixed-variant": "#5c4304",
+            "primary-fixed": "#ffdea5",
+            "error": "#ffb4ab",
+            "on-error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#5d4201",
+            "on-tertiary-container": "#4e3700",
+            "on-tertiary": "#412d00",
+            "on-primary-container": "#4e3700",
+            "surface": "#111317",
+            "on-secondary-fixed": "#261900",
+            "on-surface-variant": "#d1c5b4"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter": "1.5rem",
+            "margin-desktop": "3rem",
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "gutter-sm": "1rem",
+            "space-lg": "1.5rem",
+            "gutter-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem"
+          },
+          fontFamily: {
+            "title-md": ["Outfit", "sans-serif"],
+            "headline-lg-mobile": ["Outfit", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "display-lg-mobile": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-lg": ["Outfit", "sans-serif"],
+            "display-lg": ["Outfit", "sans-serif"]
+          },
+          fontSize: {
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "300" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "300" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+
+  <!-- CABEÇALHO / HEADER FIXO -->
+  <header id="site-header" class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)] transition-all">
+    <div class="h-20 w-full px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between">
+      
+      <!-- Logo / Marca -->
+      <a class="flex items-center gap-space-sm group text-left" href="#inicio" aria-label="Barbearia Brutus Barbershop - Ir para o início">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface group-hover:text-primary transition-colors">BRUTUS</span>
+            <span class="px-1.5 py-0.5 rounded-[2px] bg-secondary-container/40 text-primary font-label-sm text-label-sm border border-primary/20 tracking-widest uppercase">BARBER</span>
+          </div>
+          <span class="font-label-sm text-label-sm tracking-[0.25em] text-outline uppercase">BARBERSHOP</span>
+        </div>
+      </a>
+
+      <!-- Menu de Navegação Desktop -->
+      <nav id="desktop-nav" class="hidden lg:flex items-center gap-gutter" aria-label="Navegação Principal">
+        <a class="nav-link font-title-md text-title-md text-primary hover:text-primary transition-colors tracking-wide" data-section="inicio" href="#inicio">Início</a>
+        <a class="nav-link font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors tracking-wide" data-section="a-barbearia" href="#a-barbearia">A barbearia</a>
+        <a class="nav-link font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors tracking-wide" data-section="galeria" href="#galeria">Galeria</a>
+        <a class="nav-link font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors tracking-wide" data-section="localizacao" href="#localizacao">Localização</a>
+      </nav>
+
+      <!-- Ações do Cabeçalho -->
+      <div class="flex items-center gap-space-md">
+        <a class="hidden sm:inline-flex items-center justify-center px-space-md h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md tracking-wider uppercase hover:bg-primary transition-all duration-200 active:scale-95" 
+           href="https://wa.me/556699876380?text=Ol%C3%A1%2C%20equipe%20Brutus%20Barbershop%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Quais%20s%C3%A3o%20os%20servi%C3%A7os%2C%20valores%20e%20hor%C3%A1rios%20dispon%C3%ADveis%3F" 
+           rel="noopener noreferrer" 
+           target="_blank">
+          Agendar pelo WhatsApp
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobile-menu-btn" 
+                aria-label="Abrir menu de navegação" 
+                aria-expanded="false" 
+                aria-controls="mobile-menu-drawer"
+                class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" 
+                type="button">
+          <span id="menu-icon" class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Gaveta do Menu Mobile -->
+    <div id="mobile-menu-drawer" class="lg:hidden hidden border-t border-outline-variant/20 bg-surface-container-lowest/95 backdrop-blur-xl px-margin-mobile py-space-md flex flex-col gap-space-md animate-fadeIn">
+      <nav class="flex flex-col gap-space-sm" aria-label="Navegação Mobile">
+        <a class="mobile-nav-link text-title-md font-title-md py-2 px-3 rounded text-on-surface hover:text-primary hover:bg-surface-container transition-colors" href="#inicio">Início</a>
+        <a class="mobile-nav-link text-title-md font-title-md py-2 px-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" href="#a-barbearia">A barbearia</a>
+        <a class="mobile-nav-link text-title-md font-title-md py-2 px-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" href="#galeria">Galeria</a>
+        <a class="mobile-nav-link text-title-md font-title-md py-2 px-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" href="#localizacao">Localização</a>
+      </nav>
+      <div class="pt-space-xs border-t border-outline-variant/15 flex flex-col gap-space-sm">
+        <a class="w-full inline-flex items-center justify-center gap-space-xs px-space-md h-12 rounded-lg bg-primary text-on-primary font-title-md font-semibold tracking-wide uppercase hover:bg-tertiary transition-all" 
+           href="https://wa.me/556699876380?text=Ol%C3%A1%2C%20equipe%20Brutus%20Barbershop%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Quais%20s%C3%A3o%20os%20servi%C3%A7os%2C%20valores%20e%20hor%C3%A1rios%20dispon%C3%ADveis%3F" 
+           rel="noopener noreferrer" 
+           target="_blank">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          <span>Agendar pelo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="w-full pt-20 bg-background flex-1">
+    <div class="flex flex-col w-full">
+      
+      <!-- HERO SECTION -->
+      <section id="inicio" class="relative w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl lg:py-24 overflow-hidden scroll-mt-20">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-space-xl">
+          
+          <div class="flex flex-col items-start gap-space-md max-w-3xl">
+            <div class="inline-flex items-center gap-space-xs px-3 py-1 rounded bg-secondary-container/30 border border-primary/20">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              <span class="font-label-md text-label-md text-primary tracking-[0.2em] uppercase font-semibold">BRUTUS BARBERSHOP</span>
+            </div>
+
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface font-light tracking-tight leading-tight">
+              Seu estilo. <br class="hidden sm:inline" />
+              <span class="font-normal italic text-primary">A presença Brutus.</span>
+            </h1>
+
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              Conheça nosso espaço e fale com a equipe para consultar serviços e agendar seu próximo horário.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs w-full sm:w-auto">
+              <a class="inline-flex items-center justify-center gap-space-sm h-12 px-space-lg rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold tracking-wide hover:bg-tertiary transition-all duration-200 active:scale-95 shadow-lg shadow-black/40 text-center" 
+                 href="https://wa.me/556699876380?text=Ol%C3%A1%2C%20equipe%20Brutus%20Barbershop%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Quais%20s%C3%A3o%20os%20servi%C3%A7os%2C%20valores%20e%20hor%C3%A1rios%20dispon%C3%ADveis%3F" 
+                 rel="noopener noreferrer" 
+                 target="_blank">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span>Agendar pelo WhatsApp</span>
+              </a>
+
+              <a class="inline-flex items-center justify-center gap-space-xs h-12 px-space-lg rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface hover:text-primary hover:border-primary/40 font-title-md text-title-md transition-all duration-200 text-center" 
+                 href="#a-barbearia">
+                <span>Conhecer a barbearia</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Vitrine Visual do Hero (Fotografia Real 1) -->
+          <div class="relative w-full rounded-xl overflow-hidden border border-primary/20 bg-surface-container-low shadow-2xl group cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20', 'Lounge e recepção Brutus Barbershop', 'Lounge Chesterfield com iluminação cênica e conforto incomparável.')">
+            <div class="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+              <img alt="Lounge e recepção Brutus Barbershop" 
+                   class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 ease-out" 
+                   referrerpolicy="no-referrer"
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 right-0 p-space-md md:p-space-lg flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-sm backdrop-blur-md bg-surface-container-lowest/70 border-t border-outline-variant/20">
+              <div>
+                <span class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary font-semibold">Espaço Exclusivo</span>
+                <p class="font-title-md text-title-md text-on-surface">Lounge Chesterfield, iluminação cênica e conforto incomparável.</p>
+              </div>
+              <div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+                <span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+                <span>Experiência Premium</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SEÇÃO A BARBEARIA (ABOUT) -->
+      <section id="a-barbearia" class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl lg:py-24 bg-surface-container-lowest border-y border-outline-variant/15 scroll-mt-20">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-space-xl">
+          
+          <div class="flex flex-col gap-space-xs max-w-2xl">
+            <div class="flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-widest uppercase">
+              <span class="material-symbols-outlined text-[16px]">content_cut</span>
+              <span>A barbearia</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-light">
+              Um espaço pensado no seu conforto e bem-estar.
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-lg items-center">
+            
+            <!-- Coluna Visual com Fotografia Real 2 -->
+            <div class="lg:col-span-6 relative">
+              <div class="relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container shadow-xl group cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBC5JIHxkRhxfmd7Z3ccfVZUsSKpp4U6qIsEgT8wVloU1cEaa6rDsYskaY1Z7gnmj5hR6ZkMB5X4BzwtpQLz-bX6fJLSB8tjoE3oVgqSj0_bSQliFeVnY5RgOUWfzHDil9XvSHRL0xgDth5XeYUfIH-UTelbkVr_aSijKA2Hyd9uGBwDBBGrZ_21xFKmXX3MYr0fCqFITfUco15EC9o-AZ4mWi87uhY-aHwTS3Xghbw8NlmOs7-I_kFMuzsQbFa-sYB6gA', 'Barbeiros em atendimento na Brutus Barbershop', 'Mestres barbeiros atuando com técnica refinada e máxima precisão.')">
+                <img alt="Barbeiros em atendimento na Brutus Barbershop" 
+                     class="w-full h-[360px] md:h-[440px] object-cover object-center group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC5JIHxkRhxfmd7Z3ccfVZUsSKpp4U6qIsEgT8wVloU1cEaa6rDsYskaY1Z7gnmj5hR6ZkMB5X4BzwtpQLz-bX6fJLSB8tjoE3oVgqSj0_bSQliFeVnY5RgOUWfzHDil9XvSHRL0xgDth5XeYUfIH-UTelbkVr_aSijKA2Hyd9uGBwDBBGrZ_21xFKmXX3MYr0fCqFITfUco15EC9o-AZ4mWi87uhY-aHwTS3Xghbw8NlmOs7-I_kFMuzsQbFa-sYB6gA" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-space-md left-space-md right-space-md p-space-md rounded-lg bg-surface-container-high/90 backdrop-blur-md border border-primary/20 flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface">Mestres Barbeiros</h3>
+                      <p class="font-body-sm text-body-sm text-outline">Técnica e precisão em cada detalhe</p>
+                    </div>
+                  </div>
+                  <span class="font-label-sm text-label-sm px-2 py-1 rounded bg-secondary-container/40 text-primary border border-primary/20 uppercase tracking-widest">Ativo</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna de Texto e Diferenciais -->
+            <div class="lg:col-span-6 flex flex-col gap-space-lg">
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Um espaço dedicado ao seu estilo. Conheça a Brutus Barbershop e converse com a nossa equipe para encontrar o atendimento que você procura.
+              </p>
+
+              <div class="flex flex-col gap-space-md">
+                <!-- Card 1 -->
+                <div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/15 flex items-start gap-space-md transition-all hover:border-primary/30">
+                  <div class="w-10 h-10 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0 border border-primary/20">
+                    <span class="material-symbols-outlined text-[22px]">face</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Atendimento personalizado e profissional</h3>
+                    <p class="font-body-md text-body-md text-outline">Consultoria de visagismo individualizada para corte, acabamento e barba alinhados à sua identidade.</p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/15 flex items-start gap-space-md transition-all hover:border-primary/30">
+                  <div class="w-10 h-10 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0 border border-primary/20">
+                    <span class="material-symbols-outlined text-[22px]">weekend</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Ambiente climatizado e confortável</h3>
+                    <p class="font-body-md text-body-md text-outline">Lounge exclusivo com estofados de couro, sonorização selecionada e isolamento térmico de alto padrão.</p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/15 flex items-start gap-space-md transition-all hover:border-primary/30">
+                  <div class="w-10 h-10 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0 border border-primary/20">
+                    <span class="material-symbols-outlined text-[22px]">local_cafe</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Café e recepção acolhedora</h3>
+                    <p class="font-body-md text-body-md text-outline">Deguste um café expresso preparado na hora enquanto aguarda o seu horário com total comodidade.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER DE AGENDAMENTO & CONSULTORIA -->
+      <section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl lg:py-24 relative overflow-hidden">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="relative rounded-2xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low p-space-lg md:p-space-xl border border-primary/30 shadow-2xl overflow-hidden">
+            <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-gutter-lg items-center">
+              
+              <div class="lg:col-span-8 flex flex-col gap-space-sm">
+                <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-primary font-semibold">Agendamento & Consultoria</span>
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+                  Seu próximo atendimento começa com uma conversa.
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                  Consulte nossos serviços, valores e horários disponíveis diretamente com a equipe.
+                </p>
+                <div class="flex items-center gap-space-xs text-outline text-body-sm pt-space-xs">
+                  <span class="material-symbols-outlined text-primary text-[18px]">info</span>
+                  <span>Atendimento direto com nossos profissionais para entender o que você deseja e reservar o melhor horário.</span>
+                </div>
+              </div>
+
+              <div class="lg:col-span-4 flex flex-col items-stretch lg:items-end justify-center">
+                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl h-14 rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold tracking-wide hover:bg-tertiary transition-all duration-200 active:scale-95 shadow-xl shadow-black/50 text-center" 
+                   href="https://wa.me/556699876380?text=Ol%C3%A1%2C%20equipe%20Brutus%20Barbershop%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Quais%20s%C3%A3o%20os%20servi%C3%A7os%2C%20valores%20e%20hor%C3%A1rios%20dispon%C3%ADveis%3F" 
+                   rel="noopener noreferrer" 
+                   target="_blank">
+                  <span class="material-symbols-outlined text-[22px]">chat</span>
+                  <span>Consultar pelo WhatsApp</span>
+                </a>
+                <span class="text-center font-label-sm text-label-sm text-outline mt-space-xs tracking-wider uppercase">Resposta ágil em horário de atendimento</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO GALERIA DE FOTOS (6 FOTOS REAIS FORNECIDAS) -->
+      <section id="galeria" class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl lg:py-24 bg-surface-container-lowest border-y border-outline-variant/15 scroll-mt-20">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-space-xl">
+          
+          <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+            <div class="flex flex-col gap-space-xs">
+              <div class="flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-widest uppercase">
+                <span class="material-symbols-outlined text-[16px]">photo_library</span>
+                <span>Galeria</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+                Registros reais do nosso ambiente
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-outline max-w-md">
+              Conheça a estrutura, os detalhes do espaço e o cuidado com a sua experiência através de fotos autênticas da barbearia.
+            </p>
+          </div>
+
+          <!-- Grade Curada da Galeria (6 Fotos Reais) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            
+            <!-- Item 1: Lounge e Recepção -->
+            <div class="gallery-item group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container transition-all duration-300 hover:border-primary/40 cursor-pointer"
+                 onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20', 'Lounge de espera e recepção', 'Espaço aconchegante com sofás Chesterfield')">
+              <div class="aspect-[4/3] w-full overflow-hidden relative">
+                <img alt="Lounge de espera e recepção Brutus Barbershop" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOagOFcmEEU60289fFg13HoI_AgdBDGORReNqV3EHcxWLX-w8ukcaHlSA-JDSk71oAWkLGbLotbHrOTy7cRfoj_rKVl_C34fXvpYMwZMGkcwdzDd3pzm32v-AuhlCwaZ1iyxBsqEyQj6hPzK_ru1Q8amuMiZw-NzLjqA1aXYNALl05iB5whCXl63pXFP5Udihi87miILavTeWe8hH1_SAw8ShIxNX9qwq0V-ANR5OgyPZM_OR7JJmrw4KzxVUZkdKhN20" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="w-10 h-10 rounded-full bg-surface-container-high/90 text-primary flex items-center justify-center border border-primary/30">
+                    <span class="material-symbols-outlined text-[20px]">zoom_in</span>
+                  </span>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container border-t border-outline-variant/15 flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-on-surface font-medium">Lounge de espera e recepção</span>
+                  <span class="font-body-sm text-body-sm text-outline">Espaço aconchegante com sofás Chesterfield</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-[20px] opacity-0 group-hover:opacity-100 transition-opacity">search</span>
+              </div>
+            </div>
+
+            <!-- Item 2: Café Brutus e Neon -->
+            <div class="gallery-item group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container transition-all duration-300 hover:border-primary/40 cursor-pointer"
+                 onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBbRNzTc2kIxe-YEGxK2umngA8w98UJGC4-AYknkiVIDKVYkTh8B0OTZTTvkl9lmOAf-yTem_wluLL2OIDLQfYNU9bMO4XrPDzeGpAR_Sm29Q8qNf6sIGPZp88oT1epNAOVJj5klW7mLmrq7g0pJSnDu7IqVzSNPwqTkTJ9fuXc1jZahqK7nfsrX5qIT0Cq0wWskCRhqZE3_OtvVwCJWq40neubGrEz5Er-wqeDAUCmXejxqoVth3IW4PFmZKIbWbLMrYY', 'Café Brutus e detalhe neon', 'Hospitalidade e espresso de qualidade')">
+              <div class="aspect-[4/3] w-full overflow-hidden relative">
+                <img alt="Café Brutus e detalhe neon" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbRNzTc2kIxe-YEGxK2umngA8w98UJGC4-AYknkiVIDKVYkTh8B0OTZTTvkl9lmOAf-yTem_wluLL2OIDLQfYNU9bMO4XrPDzeGpAR_Sm29Q8qNf6sIGPZp88oT1epNAOVJj5klW7mLmrq7g0pJSnDu7IqVzSNPwqTkTJ9fuXc1jZahqK7nfsrX5qIT0Cq0wWskCRhqZE3_OtvVwCJWq40neubGrEz5Er-wqeDAUCmXejxqoVth3IW4PFmZKIbWbLMrYY" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="w-10 h-10 rounded-full bg-surface-container-high/90 text-primary flex items-center justify-center border border-primary/30">
+                    <span class="material-symbols-outlined text-[20px]">zoom_in</span>
+                  </span>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container border-t border-outline-variant/15 flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-on-surface font-medium">Café Brutus e detalhe neon</span>
+                  <span class="font-body-sm text-body-sm text-outline">Hospitalidade e espresso de qualidade</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-[20px] opacity-0 group-hover:opacity-100 transition-opacity">search</span>
+              </div>
+            </div>
+
+            <!-- Item 3: Estações de Corte -->
+            <div class="gallery-item group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container transition-all duration-300 hover:border-primary/40 cursor-pointer"
+                 onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBC5JIHxkRhxfmd7Z3ccfVZUsSKpp4U6qIsEgT8wVloU1cEaa6rDsYskaY1Z7gnmj5hR6ZkMB5X4BzwtpQLz-bX6fJLSB8tjoE3oVgqSj0_bSQliFeVnY5RgOUWfzHDil9XvSHRL0xgDth5XeYUfIH-UTelbkVr_aSijKA2Hyd9uGBwDBBGrZ_21xFKmXX3MYr0fCqFITfUco15EC9o-AZ4mWi87uhY-aHwTS3Xghbw8NlmOs7-I_kFMuzsQbFa-sYB6gA', 'Estações de corte e atendimento', 'Bancadas individuais e ferramentas de ponta')">
+              <div class="aspect-[4/3] w-full overflow-hidden relative">
+                <img alt="Estações de corte e atendimento Brutus Barbershop" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC5JIHxkRhxfmd7Z3ccfVZUsSKpp4U6qIsEgT8wVloU1cEaa6rDsYskaY1Z7gnmj5hR6ZkMB5X4BzwtpQLz-bX6fJLSB8tjoE3oVgqSj0_bSQliFeVnY5RgOUWfzHDil9XvSHRL0xgDth5XeYUfIH-UTelbkVr_aSijKA2Hyd9uGBwDBBGrZ_21xFKmXX3MYr0fCqFITfUco15EC9o-AZ4mWi87uhY-aHwTS3Xghbw8NlmOs7-I_kFMuzsQbFa-sYB6gA" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="w-10 h-10 rounded-full bg-surface-container-high/90 text-primary flex items-center justify-center border border-primary/30">
+                    <span class="material-symbols-outlined text-[20px]">zoom_in</span>
+                  </span>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container border-t border-outline-variant/15 flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-on-surface font-medium">Estações de corte e atendimento</span>
+                  <span class="font-body-sm text-body-sm text-outline">Bancadas individuais e ferramentas de ponta</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-[20px] opacity-0 group-hover:opacity-100 transition-opacity">search</span>
+              </div>
+            </div>
+
+            <!-- Item 4: Espaço de Convivência -->
+            <div class="gallery-item group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container transition-all duration-300 hover:border-primary/40 cursor-pointer"
+                 onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBNz0_TLbHhcCJxGVu1E1F2MdJ0e_673P_ftaFztGBwUA5kTqawW6v2qrNUKh0pmuw7utvMlI0R5Fp2kHsjgB9j-E53byxgrLnKCQzfn_Mo9qcizKuD3U3PJgCcz0NV2pYTKVkiPfCj6sgRIZbPMDlDXJAvuaD7GZmznYu2GLfD0dFUdEnqUTcIPjbeiB7eCuv9NsOToC95AAJk3RBxzldXkdQgRYD6EsKxI2yLcs-BO70oqGL0_7roEv9c2thzL5-zGkw', 'Espaço de convivência', 'Conforto absoluto para relaxar antes do corte')">
+              <div class="aspect-[4/3] w-full overflow-hidden relative">
+                <img alt="Espaço de convivência e poltronas Chesterfield" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNz0_TLbHhcCJxGVu1E1F2MdJ0e_673P_ftaFztGBwUA5kTqawW6v2qrNUKh0pmuw7utvMlI0R5Fp2kHsjgB9j-E53byxgrLnKCQzfn_Mo9qcizKuD3U3PJgCcz0NV2pYTKVkiPfCj6sgRIZbPMDlDXJAvuaD7GZmznYu2GLfD0dFUdEnqUTcIPjbeiB7eCuv9NsOToC95AAJk3RBxzldXkdQgRYD6EsKxI2yLcs-BO70oqGL0_7roEv9c2thzL5-zGkw" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="w-10 h-10 rounded-full bg-surface-container-high/90 text-primary flex items-center justify-center border border-primary/30">
+                    <span class="material-symbols-outlined text-[20px]">zoom_in</span>
+                  </span>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container border-t border-outline-variant/15 flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-on-surface font-medium">Espaço de convivência</span>
+                  <span class="font-body-sm text-body-sm text-outline">Conforto absoluto para relaxar antes do corte</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-[20px] opacity-0 group-hover:opacity-100 transition-opacity">search</span>
+              </div>
+            </div>
+
+            <!-- Item 5: Linha de Cuidados Masculinos -->
+            <div class="gallery-item group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container transition-all duration-300 hover:border-primary/40 cursor-pointer"
+                 onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuCZP9wMI1MEryBhWBB7nENsa7FtYlK-WQiCczb9msB9_6txLnp_uXaJb7E41NH4QHb-wiG05daRFM__63UUYe9XbOrZGioyDNuzD3rQqdbP52q9u0r_FMWCAbgMEf4Bsznj40TLW06TT6UzK3p1z1JVG3E34Dt50mv6_xPu4mLqMtjutW0-gDI2fPMYFk2w8jayKlEoeT94G4WSP-rW9qrONE2hFinCkVA6aC87FgR22vlKSSnmwkB62HZgSPLD3YrxAwI', 'Linha de cuidados masculinos', 'Pomadas, óleos e balms de alta performance')">
+              <div class="aspect-[4/3] w-full overflow-hidden relative">
+                <img alt="Linha de cuidados e produtos masculinos" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZP9wMI1MEryBhWBB7nENsa7FtYlK-WQiCczb9msB9_6txLnp_uXaJb7E41NH4QHb-wiG05daRFM__63UUYe9XbOrZGioyDNuzD3rQqdbP52q9u0r_FMWCAbgMEf4Bsznj40TLW06TT6UzK3p1z1JVG3E34Dt50mv6_xPu4mLqMtjutW0-gDI2fPMYFk2w8jayKlEoeT94G4WSP-rW9qrONE2hFinCkVA6aC87FgR22vlKSSnmwkB62HZgSPLD3YrxAwI" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="w-10 h-10 rounded-full bg-surface-container-high/90 text-primary flex items-center justify-center border border-primary/30">
+                    <span class="material-symbols-outlined text-[20px]">zoom_in</span>
+                  </span>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container border-t border-outline-variant/15 flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-on-surface font-medium">Linha de cuidados masculinos</span>
+                  <span class="font-body-sm text-body-sm text-outline">Pomadas, óleos e balms de alta performance</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-[20px] opacity-0 group-hover:opacity-100 transition-opacity">search</span>
+              </div>
+            </div>
+
+            <!-- Item 6: Finalizadores e Cosméticos Keune -->
+            <div class="gallery-item group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container transition-all duration-300 hover:border-primary/40 cursor-pointer"
+                 onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuA69ZMIhT2axHOXZBIXKSzPwWOxVzuOJSLmEi3-VltXRxS-cOoM_Wa3bkF-8eq_TIzejmh69iJ65HI_YABvt9f8dacm_5RxUmkfdxCpEkR6nX44ZURCTp-GL3MremVO-J5DMvJyKN7mDDgz2AtQXRzoKm-rir4SV7U5PZU5KxuRQO0up_8btauFWCusblH5sDWNu7hIdEidcydGbh60QSrLiDMTetJe0o0QhOy27afqW8j4qfEjIrIkvYZPgLpee4c78zQ', 'Produtos e finalizadores capilares', 'Acabamento duradouro para manter o visual impecável')">
+              <div class="aspect-[4/3] w-full overflow-hidden relative">
+                <img alt="Produtos e finalizadores capilares Keune 1922" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                     referrerpolicy="no-referrer"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA69ZMIhT2axHOXZBIXKSzPwWOxVzuOJSLmEi3-VltXRxS-cOoM_Wa3bkF-8eq_TIzejmh69iJ65HI_YABvt9f8dacm_5RxUmkfdxCpEkR6nX44ZURCTp-GL3MremVO-J5DMvJyKN7mDDgz2AtQXRzoKm-rir4SV7U5PZU5KxuRQO0up_8btauFWCusblH5sDWNu7hIdEidcydGbh60QSrLiDMTetJe0o0QhOy27afqW8j4qfEjIrIkvYZPgLpee4c78zQ" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="w-10 h-10 rounded-full bg-surface-container-high/90 text-primary flex items-center justify-center border border-primary/30">
+                    <span class="material-symbols-outlined text-[20px]">zoom_in</span>
+                  </span>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container border-t border-outline-variant/15 flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-on-surface font-medium">Produtos e finalizadores capilares</span>
+                  <span class="font-body-sm text-body-sm text-outline">Acabamento duradouro para manter o visual</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-[20px] opacity-0 group-hover:opacity-100 transition-opacity">search</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SEÇÃO LOCALIZAÇÃO -->
+      <section id="localizacao" class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl lg:py-24 scroll-mt-20">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-space-xl">
+          
+          <div class="flex flex-col gap-space-xs max-w-2xl">
+            <div class="flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-widest uppercase">
+              <span class="material-symbols-outlined text-[16px]">location_on</span>
+              <span>Localização</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+              Venha nos visitar
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              Encontre a Barbearia Brutus facilmente e planeje sua rota.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+            
+            <!-- Card Informativo -->
+            <div class="lg:col-span-5 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container border border-outline-variant/20 shadow-xl">
+              <div class="flex flex-col gap-space-lg">
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Endereço & Acesso</span>
+                  <h3 class="font-headline-md text-headline-md text-on-surface">Barbearia Brutus Barbershop</h3>
+                  <p class="font-body-md text-body-md text-outline">
+                    Consulte no mapa oficial a rota direta para a barbearia.
+                  </p>
+                </div>
+
+                <div class="flex flex-col gap-space-md border-t border-outline-variant/15 pt-space-md">
+                  <div class="flex items-start gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">call</span>
+                    <div class="flex flex-col">
+                      <a href="tel:+556699876380" class="font-body-md text-body-md text-on-surface font-medium hover:text-primary transition-colors">+55 66 9987-6380</a>
+                      <span class="font-body-sm text-body-sm text-outline">Confirmar número antes do contato final</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">map</span>
+                    <div class="flex flex-col">
+                      <span class="font-body-md text-body-md text-on-surface font-medium">Navegação via Google Maps</span>
+                      <span class="font-body-sm text-body-sm text-outline">Rota ponto a ponto para seu veículo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-space-lg">
+                <a class="w-full inline-flex items-center justify-center gap-space-xs h-12 px-space-md rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold tracking-wide hover:bg-tertiary transition-all duration-200" 
+                   href="https://maps.app.goo.gl/J3BLhVqvatXLP7iV7" 
+                   rel="noopener noreferrer" 
+                   target="_blank">
+                  <span class="material-symbols-outlined text-[20px]">directions</span>
+                  <span>Ver no Google Maps</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card Visual de Prévia do Mapa -->
+            <div class="lg:col-span-7 rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container min-h-[320px] relative flex flex-col justify-end p-space-lg">
+              <div class="absolute inset-0 bg-surface-container-high">
+                <!-- Grid estilizado minimalista de mapa -->
+                <div class="w-full h-full opacity-30 bg-[radial-gradient(#e9c176_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                <!-- Efeito gradiente atmosférico -->
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container/50 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10 p-space-md rounded-lg bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-2xl">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-[24px]">pin_drop</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-title-md text-title-md text-on-surface">Brutus Barbershop</span>
+                    <span class="font-body-sm text-body-sm text-outline">Abrir localização no aplicativo</span>
+                  </div>
+                </div>
+
+                <a class="inline-flex items-center gap-space-xs text-primary font-title-md text-title-md hover:underline font-medium" 
+                   href="https://maps.app.goo.gl/J3BLhVqvatXLP7iV7" 
+                   rel="noopener noreferrer" 
+                   target="_blank">
+                  <span>Abrir Mapa</span>
+                  <span class="material-symbols-outlined text-[18px]">launch</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl lg:py-24 bg-surface-container-lowest border-t border-outline-variant/15">
+        <div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-space-md">
+          <div class="inline-flex items-center gap-space-xs px-3 py-1 rounded bg-secondary-container/30 border border-primary/20 text-primary">
+            <span class="material-symbols-outlined text-[16px]">schedule</span>
+            <span class="font-label-md text-label-md tracking-widest uppercase font-semibold">Horários Disponíveis</span>
+          </div>
+
+          <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+            Seu próximo horário começa aqui.
+          </h2>
+
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Fale com a equipe Brutus para consultar os serviços e a disponibilidade.
+          </p>
+
+          <div class="pt-space-sm w-full sm:w-auto">
+            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl h-14 rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold tracking-wide hover:bg-tertiary transition-all duration-200 active:scale-95 shadow-xl shadow-black/50 text-center" 
+               href="https://wa.me/556699876380?text=Ol%C3%A1%2C%20equipe%20Brutus%20Barbershop%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Quais%20s%C3%A3o%20os%20servi%C3%A7os%2C%20valores%20e%20hor%C3%A1rios%20dispon%C3%ADveis%3F" 
+               rel="noopener noreferrer" 
+               target="_blank">
+              <span class="material-symbols-outlined text-[22px]">chat</span>
+              <span>Agendar pelo WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- BOTÃO FLUTUANTE DISCRETO DO WHATSAPP (ÚNICO E ELEGANTE) -->
+  <aside class="fixed bottom-6 right-6 z-40 group flex items-center gap-space-sm">
+    <div class="pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-surface-container-high px-space-md py-1.5 rounded-lg text-on-surface font-label-md text-label-md shadow-[0_4px_16px_rgba(0,0,0,0.5)] border border-outline-variant/30">
+      Fale conosco no WhatsApp
+    </div>
+    <a aria-label="Fale conosco pelo WhatsApp" 
+       class="relative w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.6)] hover:bg-tertiary hover:scale-105 active:scale-95 transition-all duration-200" 
+       href="https://wa.me/556699876380?text=Ol%C3%A1%2C%20equipe%20Brutus%20Barbershop%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Quais%20s%C3%A3o%20os%20servi%C3%A7os%2C%20valores%20e%20hor%C3%A1rios%20dispon%C3%ADveis%3F" 
+       rel="noopener noreferrer" 
+       target="_blank">
+      <span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-30 animate-ping pointer-events-none"></span>
+      <span class="material-symbols-outlined text-[28px] relative z-10">chat</span>
+    </a>
+  </aside>
+
+  <!-- RODAPÉ / FOOTER -->
+  <footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-space-xl pb-space-lg">
+    <div class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg pb-space-lg">
+        
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wider">Barbearia - Brutus Barbershop</span>
+          <span class="font-body-sm text-body-sm text-outline">Experiência refinada de corte, barba e cuidados masculinos.</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md md:gap-gutter">
+          <a class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="tel:+556699876380">
+            <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+            <span>+55 66 9987-6380</span>
+          </a>
+          <a class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="https://maps.app.goo.gl/J3BLhVqvatXLP7iV7" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+            <span>Ver no Google Maps</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-outline-variant/15 pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+        <p class="font-body-sm text-body-sm text-outline">
+          &copy; 2024 Barbearia Brutus Barbershop. Todos os direitos reservados.
+        </p>
+        <div class="flex items-center gap-space-md">
+          <span class="font-label-sm text-label-sm tracking-wider uppercase text-outline">Tradição & Estilo</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL LIGHTBOX PARA VISUALIZAÇÃO AMPLIADA DAS FOTOS -->
+  <div id="lightbox" 
+       class="lightbox-modal hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4" 
+       role="dialog" 
+       aria-modal="true" 
+       aria-label="Visualizador de Fotografia">
+    <div class="relative max-w-5xl w-full flex flex-col items-center gap-3">
+      <!-- Botão Fechar -->
+      <button onclick="closeLightbox()" 
+              aria-label="Fechar visualização" 
+              class="self-end p-2 text-on-surface-variant hover:text-primary bg-surface-container-high/80 rounded-full transition-colors">
+        <span class="material-symbols-outlined text-[24px]">close</span>
+      </button>
+
+      <!-- Imagem Ampliada -->
+      <div class="w-full max-h-[75vh] flex items-center justify-center overflow-hidden rounded-lg border border-outline-variant/30 bg-surface-container-low">
+        <img id="lightbox-img" 
+             src="" 
+             alt="" 
+             referrerpolicy="no-referrer"
+             class="max-w-full max-h-[75vh] object-contain rounded" />
+      </div>
+
+      <!-- Legenda -->
+      <div class="text-center px-4">
+        <h4 id="lightbox-title" class="font-title-md text-title-md text-on-surface font-semibold"></h4>
+        <p id="lightbox-desc" class="font-body-sm text-body-sm text-outline"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT LEVE EM JAVASCRIPT VANILLA -->
+  <script>
+    // --- Gerenciamento do Menu Mobile ---
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+    const menuIcon = document.getElementById('menu-icon');
+
+    function toggleMobileMenu() {
+      const isOpen = !mobileMenuDrawer.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenuDrawer.classList.add('hidden');
+        menuIcon.textContent = 'menu';
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        mobileMenuDrawer.classList.remove('hidden');
+        menuIcon.textContent = 'close';
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+
+    // Fechar menu mobile ao clicar em um link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!mobileMenuDrawer.classList.contains('hidden')) {
+          toggleMobileMenu();
+        }
+      });
+    });
+
+    // --- Navegação Ativa & Scroll Suave ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 120;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          currentSection = sectionId;
+        }
+      });
+
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-section') === currentSection) {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('text-primary');
+        } else {
+          link.classList.remove('text-primary');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    });
+
+    // --- Lightbox de Fotografia ---
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+
+    function openLightbox(src, title, desc) {
+      lightboxImg.src = src;
+      lightboxImg.alt = title;
+      lightboxTitle.textContent = title;
+      lightboxDesc.textContent = desc;
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    // Fechar ao clicar fora da imagem
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // Fechar com a tecla Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
